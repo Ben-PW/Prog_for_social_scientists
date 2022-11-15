@@ -38,12 +38,12 @@ presented in descending order of code progress
 
 NB, issues relate only to the code in the 'GUI' folder, as this is the version of the code that is intended to be run. 
 
-* Code generates two outputs, 'Model' (intended GUI output) and 'Figure 1'. Figure 1 is an additional GUI with additional menu elements intended to be attached to 'Model'
+* Code generates two outputs, 'Model' (intended GUI output) and 'Figure 1'. Figure 1 is a static render of the final animation frame with additional options, such as zooming in on the environment. Ideally this could have been implimented as part of the animation GUI, however I was unable to do this. 
 * Stopping condition built into update() and gen_func() functions occasionally means animation wont begin, please interrupt and restart code if this happens
 * Potential bug with the 'share' behaviour - print statements were used to check whether agents were sharing, how far away the involved agents were from each other and how much they shared. Shares with relative distances of 0 were noted, which suggests they may have been sharing with themselves. 
 
 ## Future progress
 
-I would like to integrate more user interactions in the GUI, such as allowing the user to alter the stopping conditions, agent number etc without having to alter the source code. Sorting out the 'Figure 1' issue would be a bonus here
+I would like to integrate more user interactions in the GUI, such as allowing the user to alter the stopping conditions, agent number etc without having to alter the source code. 
 
 I would also like to add an additional agent type with different base behaviours but which would interact with the agents already in the model. AN example could be 'sheepdog' agents, which could try and follow agents and herd them in a particular direction. 
